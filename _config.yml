@@ -3,6 +3,7 @@ title: Yfan Blog
 SEOTitle: Yfan的博客 | Yfan Blog
 header-img: img/post-bg-desk.jpg
 email: yfanweb@gmail.com
+qq: "464715077"
 description: "假装努力一下"
 keyword: "Yfan, Yfan Blog,, iOS, Apple, iPhone"
 url: "http://shuideya.github.io"          # your host, for absolute URL
@@ -74,10 +75,10 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 
+#ba_track_id: 
 
 # Google Analytics
-ga_track_id:            # Format: UA-xxxxxx-xx
+#ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
 ga_domain: yfan.net               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
