@@ -3,6 +3,7 @@ title: Yfan Blog
 SEOTitle: Yfan的博客 | Yfan Blog
 header-img: img/post-bg-desk.jpg
 email: yfanweb@gmail.com
+weibo:"_你在这里阿"
 qq: "464715077"
 description: "假装努力一下"
 keyword: "Yfan, Yfan Blog,, iOS, Apple, iPhone"
@@ -19,7 +20,7 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 
 # SNS settings
 RSS: false
-weibo_username:     _你在这里阿
+#weibo_username:     _你在这里阿
 #zhihu_username:     qiubaiying
 #github_username:    shuideya
 #facebook_username:  baiying.qiu.7
