@@ -1,13 +1,16 @@
 ---
 layout:     post
-title:      关于写博客
-subtitle:   为什么写博客，怎么写博客，写什么内容
+title:      Git&Github
+subtitle:   用git在GitHub的海洋遨游
 date:       2018-03-24
 author:     Yfan
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
     - 分享
+    - Git
+    - 技术
+    
 ---
 
 前言
@@ -117,7 +120,10 @@ git config --global push.default simple
 git rm --cached ProjectFolder.xcodeproj/project.xcworkspace/xcuserdata/myUserName.xcuserdatad/UserInterfaceState.xcuserstate
 git commit -m "Removed file that shouldn't be tracked"
 
-##6.gitignore 使用
+##6.git的一些其他设置
+1.git push origin master 设置成 git push 等
+
+##7.gitignore 使用
 
 #Github的使用
 
@@ -132,6 +138,6 @@ git commit -m "Removed file that shouldn't be tracked"
 
 #迅速查找问题
 
-http://yfan.net/SomeShare/
+<http://yfan.net/SomeShare/>
 
-#学习途径
+
