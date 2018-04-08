@@ -1,4 +1,2 @@
 
-[博客的搭建教程来自这里](http://qiubaiying.github.io)
-
-
+[博客的搭建教程来自这里](https://github.com/qiubaiying/qiubaiying.github.io)
