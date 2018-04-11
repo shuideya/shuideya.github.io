@@ -17,7 +17,17 @@ tags:
 ===
 >这里是简单的共同学习分享时刻，主要是以下几个方面的探讨：**Git的基础**、**Github使用**、**迅速查找问题**
 
+1.iterm
+在这之前先说工具Sourcetree 和iTerm。
+主要说下iterm：
+com+d，com+shitf+d
+control + a: 到行首
+control + e: 行末
+命令回放: Cmd+Alt+B
+清屏：cmd+l
+这里有一些方便写和查看命令的主题：<https://github.com/robbyrussell/oh-my-zsh>
 
+2.readme要写的、Tree这个树形库 可以了解一下
 
 # Git的基础
 
