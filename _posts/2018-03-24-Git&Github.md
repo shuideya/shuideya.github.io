@@ -15,7 +15,7 @@ tags:
 
 前言
 ===
->这里是简单的共同学习分享时刻，主要是以下几个方面的探讨：**Git的基础**、**Github的使用**、**迅速查找问题**、**学习途径**
+>这里是简单的共同学习分享时刻，主要是以下几个方面的探讨：**Git的基础**、**Github使用**、**迅速查找问题**
 
 
 
@@ -37,21 +37,23 @@ tags:
 
 ```
 1.git add .
-2.git commit －m ""
+2.git commit －m""
 
-  1和2 类似于 git commit －a
+  1和2 类似于 git commit -am
 
 3.git pull 拉取
 4.git push 提交
 5.git status 查状态
 6.git branch dev 新建分支
 7.git checkout dev 切换分支
-8.git reset --hard 版本号   本地恢复到某个版本
+8.git reset --hard 版本号   本地恢复到某个版本,注意和soft的区别，这里的内容还很多,大家可以细细研究
+  git reset --soft（简单说：重置后，版本之后的都在暂存区，hard是后面的销毁了）
 9.git rev-parse HEAD 或 git rev-parse --short HEAD  查询当前分支版本号
 10.分支合并
 git checkout master
 git merge featureA
 或git rebase featureA 重新排序
+11.git checkout --orphan gh-pages 创建一个无历史的分支
 
 ```
 		
@@ -69,7 +71,13 @@ To git@git.yunpro.cn:wangdian/app-ui-android.git
 Switched to branch 'dev'
 ➜  Wangshop git:(dev)
 ```
-
+```
+为什么打tag，有的同事说，打个release 版本分支不也一样吗
+git show v3.8.703  (这里标签的版本信息就更全一些)
+git checkout v3.8.703 (切到tag)
+git tag -d <tagname> （删除tag）
+git push origin :<tagname>
+```
 	
 	
 ###别名alias设置
@@ -96,6 +104,7 @@ Switched to branch 'dev'
 >当前分支暂存。这些就不写了
 
 ###分支
+
 
 ![](http://images2015.cnblogs.com/blog/747889/201610/747889-20161026183005062-1944621251.jpg)
 
@@ -128,6 +137,7 @@ git commit -m "Removed file that shouldn't be tracked"
 #Github的使用
 
 * 流程
+* readme了解一下，树状图了解一下
 * 做静态网站 <https://pages.github.com/>
 * 短链生成 <http://git.io/>
 * 活跃项目 <https://github.com/explore>
