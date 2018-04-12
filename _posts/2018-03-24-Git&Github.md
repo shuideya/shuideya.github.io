@@ -15,7 +15,10 @@ tags:
 
 前言
 ===
->这里是简单的共同学习分享时刻，主要是以下几个方面的探讨：**Git的基础**、**Github使用**、**迅速查找问题**
+>这里是简单的共同学习分享时刻，主要是提高效率，对以下几个方面的探讨：**工具使用**、**Git的基础**、**Github使用**、**迅速查找问题**
+
+
+# 工具使用
 
 1.iterm
 在这之前先说工具Sourcetree 和iTerm。
@@ -28,8 +31,13 @@ control + e: 行末
 这里有一些方便写和查看命令的主题：<https://github.com/robbyrussell/oh-my-zsh>
 
 2.readme要写的、Tree这个树形库 可以了解一下
+ tree 还可以列出文件或目录大小，排序，权限等等
 3.浏览器使用：搜索，收藏夹，搜索引擎语法啊...等等
-4.电脑快捷键：多屏幕，触发角，手势，快捷键   ==>苹果电脑适合开发。🙂
+
+4.一般繁琐重复的工作都有工具，来提高效率。GitHub市场里也有工具这一块，我们的trello，fir 也都是工具。
+对iOS：也有特别多。比如json数据直接生成模型 工具，有的几年开发经验的开发者也不知道使用。
+
+5.电脑快捷键：多屏幕，触发角，手势，快捷键   ==>苹果电脑适合开发。🙂
 
 # Git的基础
 
@@ -65,6 +73,7 @@ control + e: 行末
 git checkout master
 git merge featureA
 或git rebase featureA 重新排序
+git rebase 里面的东西也很多，大家自己细细研究
 11.git checkout --orphan gh-pages 创建一个无历史的分支
 
 ```
@@ -152,9 +161,17 @@ git commit -m "Removed file that shouldn't be tracked"
 * 做静态网站 <https://pages.github.com/>
 * 短链生成 <http://git.io/>
 * 活跃项目 <https://github.com/explore>
-* 通过关键字查找项目 awesome
+* 通过关键字查找项目 awesome Android iOS Learning(eg.Machine learning)
 * 发现好的开源项目explore ，市场上的好的工具market
-* 等等
+* github一些排行<https://github-ranking.com/>
+* 国内的一些大牛 <http://outofmemory.cn/github/> （找到他们的微博什么的，可以问一些问题，简单问题就不要烦人家了）
+* github给的一些搜索技巧 <https://help.github.com/categories/search/>
+	(stars:10..20;  forks:>100)
+	
+* github排在第三的一个项目，里面是一些书。 <https://github.com/vhf/free-programming-books>
+* 国内一线互联网公司内部面试题库 <https://github.com/GeniusVJR/LearningNotes>
+* github秘籍 <https://github.com/tiimgreen/github-cheat-sheet/>
+* git 秘籍 <http://wiki.yunpro.cn/index.php?title=Git_%E7%9A%84%E7%94%A8%E6%B3%95>
 
 
 #迅速查找问题
