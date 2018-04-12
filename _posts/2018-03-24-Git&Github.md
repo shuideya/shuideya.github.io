@@ -55,6 +55,7 @@ control + e: 行末
  	
 ##3.常用命令
 
+![](https://images2015.cnblogs.com/blog/747889/201610/747889-20161026145220500-1320304386.jpg)
 ```
 1.git add .
 2.git commit －m""
@@ -122,13 +123,27 @@ git push origin :<tagname>
 	
 ###git stash
 
->当前分支暂存。这些就不写了
+>当前分支暂存。保存一下，干其他事情
+git stash == git stash save ""
+git stash list
+git stash pop [--index] [<stash>] (eg. git stash pop stash@{1})
+git stash clear
 
 ###分支
 
 
 ![](http://images2015.cnblogs.com/blog/747889/201610/747889-20161026183005062-1944621251.jpg)
 
+* Production 分支  
+也就是我们经常使用的Master分支，这个分支最近发布到生产环境的代码，最近发布的Release， 这个分支只能从其他分支合并，不能在这个分支直接修改
+* Develop 分支  
+这个分支是我们是我们的主开发分支，包含所有要发布到下一个Release的代码，这个主要合并与其他分支，比如Feature分支
+* Feature 分支  
+这个分支主要是用来开发一个新的功能，一旦开发完成，我们合并回Develop分支进入下一个Release
+* Release分支  
+当你需要一个发布一个新Release的时候，我们基于Develop分支创建一个Release分支，完成Release后，我们合并到Master和Develop分支,release 发布分支打完，新的dev分支改动不要合并到release。
+* Hotfix分支  
+当我们在Production发现新的Bug时候，我们需要创建一个Hotfix, 完成Hotfix后，我们合并回Master和Develop分支，所以Hotfix的改动会进入下一个Release
 
 ###文档终极版
 	
@@ -140,20 +155,24 @@ git push origin :<tagname>
 
 
 ##5.其他命令：
-svn 迁移到 git
+* svn 迁移到 git
     git svn clone svn://center.11bbt.com/bbtwork/project/bbt2.0/02.bbtClient/02.bbtstore/02_code/02_ios/trunk/BBTB/BBTBusiness –no-metadata –trunk=trunk BBTBusine
 
-git push.default设置：
+* git push --set-upstream origin master 以后直接 git push 就可以
+* git push.default设置：（设置push.default为upstream ,和simple类似的）
 git config --global push.default simple
+git config --global push.default upstream（git config push.default upstream）
+
+
+#取消设置
+git config --unset push.default
 
 //忽略.xcuserstate 文件
 git rm --cached ProjectFolder.xcodeproj/project.xcworkspace/xcuserdata/myUserName.xcuserdatad/UserInterfaceState.xcuserstate
 git commit -m "Removed file that shouldn't be tracked"
 
-##6.git的一些其他设置
-1.git push origin master 设置成 git push 等
 
-##7.gitignore 使用
+##6.gitignore 使用
 
 #Github的使用
 
