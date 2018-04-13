@@ -93,6 +93,7 @@ To git@git.yunpro.cn:wangdian/app-ui-android.git
 Switched to branch 'dev'
 ➜  Wangshop git:(dev)
 ```
+
 ```
 为什么打tag，有的同事说，打个release 版本分支不也一样吗
 git show v3.8.703  (这里标签的版本信息就更全一些)
@@ -162,9 +163,7 @@ git stash clear
 * git push.default设置：（设置push.default为upstream ,和simple类似的）
 git config --global push.default simple
 git config --global push.default upstream（git config push.default upstream）
-
-
-#取消设置
+//取消设置
 git config --unset push.default
 
 //忽略.xcuserstate 文件
@@ -190,11 +189,7 @@ git commit -m "Removed file that shouldn't be tracked"
 * github排在第三的一个项目，里面是一些书。 <https://github.com/vhf/free-programming-books>
 * 国内一线互联网公司内部面试题库 <https://github.com/GeniusVJR/LearningNotes>
 * github秘籍 <https://github.com/tiimgreen/github-cheat-sheet/>
-* git 秘籍 <http://wiki.yunpro.cn/index.php?title=Git_%E7%9A%84%E7%94%A8%E6%B3%95>
 
 
-#迅速查找问题
-
-<http://yfan.net/SomeShare/>
 
 
