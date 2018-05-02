@@ -65,6 +65,8 @@ control + e: 行末
 3.git pull 拉取  
 git pull <远程主机名> <远程分支名>:<本地分支名>  => $ git fetch origin  $ git merge origin/next
 4.git push 提交
+  git push <远程主机名> <本地分支名>:<远程分支名>
+  git push origin develop:master -f 本地dev强制覆盖 线上master
 5.git status 查状态
 6.git branch dev 新建分支
 7.git checkout dev 切换分支
