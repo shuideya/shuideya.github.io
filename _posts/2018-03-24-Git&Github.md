@@ -63,7 +63,7 @@ control + e: 行末
   1和2 类似于 git commit -am
 
 3.git pull 拉取  
-git pull <远程主机名> <远程分支名>:<本地分支名>  => $ git fetch origin  $ git merge origin/next
+  git pull <远程主机名> <远程分支名>:<本地分支名>  => $ git fetch origin  $ git merge origin/next
 4.git push 提交
   git push <远程主机名> <本地分支名>:<远程分支名>
   git push origin develop:master -f 本地dev强制覆盖 线上master
@@ -132,6 +132,30 @@ git stash == git stash save ""
 git stash list
 git stash pop [--index] [<stash>] (eg. git stash pop stash@{1})
 git stash clear
+
+###撤销类命令 
+如果是单个文件 
+1.use "git reset HEAD <file>..." to unstage 
+如果已经用add 命令把文件加入stage了，就先需要从stage中撤销
+
+然后再从工作区撤销 
+2.use "git checkout -- <file>..." to discard changes in working directory
+
+git checkout a.txt  撤销a.txt的变动（工作区上的文件） 
+如果是多个文件 
+git chenkout .
+
+如果已经commit 了，则需要 
+git commit --amend 来修改，这个只能修改最近上一次的,也就是用一个新的提交来覆盖上一次的提交。因此如果push以后再做这个动作就会有危险
+
+$ git reset --hard HEAD 放弃工作区和index的改动,HEAD指针仍然指向当前的commit.（参照第一幅图）
+
+这条命令同时还可以用来撤销还没commit的merge,其实原理就是放弃index和工作区的改动，因为没commit的改动只存在于index和工作区中。
+
+$ git reset --hard HEAD^ 用来撤销已经commit的内容(等价于 git reset --hard HEAD~1) 。原理就是放弃工作区和index的改动，同时HEAD指针指向前一个commit对象。
+
+git revert 也是撤销命令，区别在于reset是指向原地或者向前移动指针，git revert是创建一个commit来覆盖当前的commit,指针向后移动
+
 
 ###分支
 
