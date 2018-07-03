@@ -134,6 +134,7 @@ git stash pop [--index] [<stash>] (eg. git stash pop stash@{1})
 git stash clear
 
 ###撤销类命令 
+
 如果是单个文件 
 1.use "git reset HEAD <file>..." to unstage 
 如果已经用add 命令把文件加入stage了，就先需要从stage中撤销
