@@ -135,6 +135,9 @@ git stash clear
 
 ###撤销类命令 
 
+如果是多个文件 
+如果 没有add到暂存区，要撤销多个文件：可以先add到暂存区，然后使用git reset --hard HEAD 还原本地
+
 如果是单个文件 
 1.use "git reset HEAD <file>..." to unstage 
 如果已经用add 命令把文件加入stage了，就先需要从stage中撤销
@@ -157,6 +160,27 @@ $ git reset --hard HEAD^ 用来撤销已经commit的内容(等价于 git reset -
 
 git revert 也是撤销命令，区别在于reset是指向原地或者向前移动指针，git revert是创建一个commit来覆盖当前的commit,指针向后移动
 
+```
+基本状态标识
+A- = untracked 未跟踪
+A = tracked 已跟踪未修改
+A+ = modified - 已修改未暂存
+B = staged - 已暂存未提交
+C = committed - 已提交未PUSH
+
+各状态之间变化
+A- -> B : git add <FILE>
+B -> A- : git rm --cached <FILE>
+B -> 删除不保留文件 : git rm -f <FILE>
+A -> A- : git rm --cached <FILE>
+A -> A+ : 修改文件
+A+ -> A : git checkout -- <FILE>
+A+ -> B : git add <FILE>
+B -> A+ : git reset HEAD <FILE>
+B -> C : git commit
+C -> B : git reset --soft HEAD^
+修改最后一次提交:git commit --amend
+```
 
 ###分支
 
