@@ -3,29 +3,29 @@ title: Yfan Blog
 SEOTitle: Yfan的博客 | Yfan Blog
 header-img: img/post-bg-desk.jpg
 email: yfanweb@gmail.com
-weibo: "_你在这里阿"
-qq: "464715077"
-description: "假装努力一下"
-keyword: "Yfan, Yfan Blog,, iOS, Apple, iPhone"
+weibo: ""
+qq: ""
+description: ""
+keyword: "Yfan, 笑脸, 笑脸的炒股日记, 精神财产"
 url: "http://shuideya.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/shuideya/shuideya.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "终身学习者!"
+sidebar-about-description: "笑脸"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-#weibo_username:     _你在这里阿
-#zhihu_username:     qiubaiying
+#weibo_username:     
+#zhihu_username:     
 #github_username:    shuideya
-#facebook_username:  baiying.qiu.7
-#jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+#facebook_username:  
+#jianshu_username:   
+#twitter_username:   
 
 
 
@@ -64,11 +64,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4   #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d  #同上
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  clientID: eb6d3478cb9c8cbf271b   #生成的clientID
+  clientSecret: d1b199c0b699e3ad3348e101a175c62b5c7fb11f  #同上
+  repo: shuideya.github.io    #仓库名称
+  owner: yfan    #github用户名
+  admin: shuideya
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -104,13 +104,10 @@ friends: [
         title: "谷歌",
         href: "https://google.com"
     },{
-        title: "百度",
-        href: "http://www.baidu.com/"
+        title: "github",
+        href: "https://www.github.com/"
     },{
         title: "Apple",
         href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
     }
 ]
