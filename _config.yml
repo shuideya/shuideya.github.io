@@ -67,7 +67,7 @@ gitalk:
   clientID: eb6d3478cb9c8cbf271b   #生成的clientID
   clientSecret: d1b199c0b699e3ad3348e101a175c62b5c7fb11f  #同上
   repo: shuideya.github.io    #仓库名称
-  owner: yfan    #github用户名
+  owner: shuideya    #github用户名
   admin: shuideya
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
@@ -101,7 +101,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "谷歌",
+        title: "google",
         href: "https://google.com"
     },{
         title: "github",
